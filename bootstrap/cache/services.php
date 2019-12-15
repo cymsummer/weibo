@@ -20,15 +20,15 @@
     16 => 'Illuminate\\Redis\\RedisServiceProvider',
     17 => 'Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider',
     18 => 'Illuminate\\Session\\SessionServiceProvider',
-    19 => 'Illuminate\\Translation\\TranslationServiceProvider',
-    20 => 'Illuminate\\Validation\\ValidationServiceProvider',
-    21 => 'Illuminate\\View\\ViewServiceProvider',
-    22 => 'Facade\\Ignition\\IgnitionServiceProvider',
-    23 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
-    24 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    25 => 'Laravel\\Ui\\UiServiceProvider',
-    26 => 'Carbon\\Laravel\\ServiceProvider',
-    27 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    19 => 'Illuminate\\Validation\\ValidationServiceProvider',
+    20 => 'Illuminate\\View\\ViewServiceProvider',
+    21 => 'Facade\\Ignition\\IgnitionServiceProvider',
+    22 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
+    23 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    24 => 'Laravel\\Ui\\UiServiceProvider',
+    25 => 'Carbon\\Laravel\\ServiceProvider',
+    26 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    27 => 'Overtrue\\LaravelLang\\TranslationServiceProvider',
     28 => 'App\\Providers\\AppServiceProvider',
     29 => 'App\\Providers\\AuthServiceProvider',
     30 => 'App\\Providers\\EventServiceProvider',
@@ -158,12 +158,13 @@
     'redis.connection' => 'Illuminate\\Redis\\RedisServiceProvider',
     'auth.password' => 'Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider',
     'auth.password.broker' => 'Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider',
-    'translator' => 'Illuminate\\Translation\\TranslationServiceProvider',
-    'translation.loader' => 'Illuminate\\Translation\\TranslationServiceProvider',
     'validator' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'Laravel\\Ui\\AuthCommand' => 'Laravel\\Ui\\UiServiceProvider',
     'Laravel\\Ui\\UiCommand' => 'Laravel\\Ui\\UiServiceProvider',
+    'translator' => 'Overtrue\\LaravelLang\\TranslationServiceProvider',
+    'translation.loader' => 'Overtrue\\LaravelLang\\TranslationServiceProvider',
+    'Overtrue\\LaravelLang\\Commands\\Publish' => 'Overtrue\\LaravelLang\\TranslationServiceProvider',
   ),
   'when' => 
   array (
@@ -197,13 +198,13 @@
     'Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider' => 
     array (
     ),
-    'Illuminate\\Translation\\TranslationServiceProvider' => 
-    array (
-    ),
     'Illuminate\\Validation\\ValidationServiceProvider' => 
     array (
     ),
     'Laravel\\Ui\\UiServiceProvider' => 
+    array (
+    ),
+    'Overtrue\\LaravelLang\\TranslationServiceProvider' => 
     array (
     ),
   ),
