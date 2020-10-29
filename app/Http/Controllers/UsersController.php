@@ -29,11 +29,12 @@ class UsersController extends Controller
     }
 
     //列表展示
+    //获取用户发布的所有微博
     public function show(User $user){
         $statuses=$user->statuses()
-            ->orderby('created_at','desc')
-            ->paginate();
-        return view('users.show',compact('user','statuses'));
+            ->orderBy("created_at","desc")
+            ->paginate(10);
+        return view("users.show",compact('user','statuses'));
     }
 
     //数据信息验证

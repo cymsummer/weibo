@@ -45,8 +45,6 @@ Route::get('login','SessionsController@create')->name('login');
 Route::post('login','SessionsController@store')->name('login');
 Route::delete('logout','SessionsController@destory')->name('logout');
 
-
-//微博操作
-Route::resource('statuses','StatusesController',['only'=>['store','destroy']]);
-
+//对微博信息进行处理
+Route::resource("statuses",'StatusesController',['only'=>['store','destroy']]);
 
